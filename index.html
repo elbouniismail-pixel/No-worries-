@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Something Special ✨</title>
+
+<style>
+
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background 0.5s ease;
+}
+
+/* THEMES */
+
+.cosmic {
+  background: radial-gradient(circle at top, #1b2735, #090a0f);
+  color: #eaeaea;
+}
+
+.romantic {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+}
+
+/* SCREENS */
+
+.screen {
+  display: none;
+  padding: 20px;
+  max-width: 700px;
+}
+
+.active {
+  display: block;
+}
+
+/* TEXT */
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+}
+
+p {
+  font-size: clamp(1rem, 4vw, 1.3rem);
+  line-height: 1.7;
+}
+
+/* BUTTONS */
+
+button {
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 16px 38px;
+  font-size: 1.1rem;
+  margin-top: 30px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.nextBtn {
+  background: #eaeaea;
+  color: #111;
+}
+
+/* HEARTS */
+
+.heart {
+  position: absolute;
+  bottom: -20px;
+  font-size: 20px;
+  animation: floatUp linear infinite;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
+/* IMAGES */
+
+img {
+  max-width: 260px;
+  border-radius: 18px;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* SIGNATURE */
+
+.signature {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 220px;
+  }
+}
+
+</style>
+</head>
+
+<body class="cosmic">
+
+<!-- MUSIC -->
+
+<audio id="bgMusic"
+src="https://assets.mixkit.co/music/preview/mixkit-romantic-piano-229.mp3"
+loop></audio>
+
+<!-- SCREEN 1 -->
+
+<div class="screen active">
+
+  <h1>Hello Hiba ✨</h1>
+
+  <p>
+    The universe has a funny way of doing things.<br><br>
+
+    A tiny coincidence here…<br>
+    a perfectly timed moment there…<br><br>
+
+    And suddenly, you’re here.
+  </p>
+
+  <button class="nextBtn">Reveal it</button>
+
+</div>
+
+<!-- SCREEN 2 -->
+
+<div class="screen">
+
+  <h1>Ohhh… 😏</h1>
+
+  <p>
+    So you’re really curious.<br><br>
+
+    That little voice saying:<br>
+    “okay but what is this about?”<br><br>
+
+    I liiiiike that.
+  </p>
+
+  <img src="https://media.tenor.com/DimzPZMypFcAAAAC/side-eye.gif">
+
+  <button class="nextBtn">Keep going</button>
+
+</div>
+
+<!-- SCREEN 3 -->
+
+<div class="screen">
+
+  <h1>You’re still here 👀</h1>
+
+  <p>
+    At this point, most people would've stopped clicking.<br><br>
+
+    But not you.<br><br>
+
+    Either your curiosity is undefeated…<br>
+    or someone really got your attention 😌
+  </p>
+
+  <img src="https://media.tenor.com/bFY_W3x6myAAAAAC/hmmm-suspicious.gif">
+
+  <button class="nextBtn">Next 👀</button>
+
+</div>
+
+<!-- SCREEN 4 -->
+
+<div class="screen">
+
+  <h1>Interesting... very interesting 😏</h1>
+
+  <p>
+    You kept clicking “next” like there’s treasure at the end of this.<br><br>
+
+    Honestly?<br>
+    Ismail probably feels very powerful right now 😂<br><br>
+
+    But okay okay…<br>
+    one final click and I’ll stop teasing you.
+  </p>
+
+  <img src="https://media.tenor.com/oEsO4EXHuDMAAAAC/evil-smile.gif">
+
+  <button class="nextBtn">Alright then ✨</button>
+
+</div>
+
+<!-- FINAL SCREEN -->
+
+<div class="screen">
+
+  <h1>🎉 Happy Birthday Hiba 🎂</h1>
+
+  <p style="max-width:700px; margin:auto;">
+
+    I guess by now you’ve realized this whole thing was made for you 😌✨
+    <br><br>
+
+    Honestly… I just wanted to make you smile today.
+    Because someone as special as you deserves more than just a simple “Happy Birthday”.
+    <br><br>
+
+    I really love the connection we’re building together,
+    and honestly, getting to know your kind and sweet soul has been one of the nicest things lately ✨
+    <br><br>
+
+    I hope this year brings you happiness, peace, success,
+    and many beautiful moments worth remembering 💫
+    <br><br>
+
+    Keep being the kind, sweet,
+    and beautiful soul that makes people feel comfortable around you ✨
+    <br><br>
+
+    Happy Birthday Hiba 💖<br>
+    Enjoy your day princess ✨
+
+  </p>
+
+  <img src="https://media.tenor.com/W5fWk6C6J2AAAAAC/cute-bear-love.gif">
+
+  <img src="https://media.tenor.com/I6kN-6X7nhAAAAAC/dancing-happy.gif">
+
+  <img src="https://media.tenor.com/hnP8FWI5fB4AAAAC/leonardo-dicaprio-dance.gif">
+
+  <div class="signature">
+    — Ismail 💫
+  </div>
+
+</div>
+
+<script>
+
+const screens = document.querySelectorAll(".screen");
+const body = document.body;
+const bgMusic = document.getElementById("bgMusic");
+
+let index = 0;
+
+/* NEXT BUTTONS */
+
+document.querySelectorAll(".nextBtn").forEach(btn => {
+
+  btn.onclick = () => {
+
+    screens[index].classList.remove("active");
+
+    index++;
+
+    screens[index].classList.add("active");
+
+    /* FINAL PAGE */
+
+    if(index === 4){
+
+      body.className = "romantic";
+
+      bgMusic.play().catch(() => {});
+
+      startHearts();
+    }
+  };
+
+});
+
+/* HEARTS */
+
+function startHearts(){
+
+  setInterval(() => {
+
+    const h = document.createElement("div");
+
+    h.className = "heart";
+
+    h.innerHTML = "❤️";
+
+    h.style.left = Math.random() * 100 + "vw";
+
+    h.style.animationDuration =
+      (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(h);
+
+    setTimeout(() => h.remove(), 8000);
+
+  }, 350);
+
+}
+
+</script>
+
+</body>
+</html>
